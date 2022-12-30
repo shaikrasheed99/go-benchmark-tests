@@ -9,3 +9,11 @@ func factorialUsingIteration(number int) int {
 
 	return fact
 }
+
+func factorialUsingRecursion(number int) int {
+	if number <= 1 {
+		return 1
+	}
+
+	return number * factorialUsingRecursion(number-1)
+}
